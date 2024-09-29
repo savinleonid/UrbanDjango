@@ -7,10 +7,10 @@ def main_page(request):
 
 
 def shop_page(request):
-    items = {'items': [
-        'Игровая приставка',
-        'Комплект игр',
-        'Игровая мышь'
+    items = {'games': [
+        'Atomic Heart',
+        'Cyberpunk 2077',
+        'PayDay 2'
     ]}
     return render(request, 'fourth_task/shop_page.html', {'items': items})
 
